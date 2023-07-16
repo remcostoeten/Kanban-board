@@ -1,11 +1,10 @@
+import Logo from './svg-elements/Logo';
 export default function Header() {
     return (
         <nav className="bg-white py-2 md:py-4">
             <div className="container px-4 mx-auto md:flex md:items-center">
                 <div className="flex justify-between items-center">
-                    <a href="#" target="_blank" className="font-bold text-xl text-indigo-600">
-                        Remco Stoeten
-                    </a>
+                    <Logo />
                     <button className="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden" id="navbar-toggle">
                         <i className="fas fa-bars" />
                     </button>
@@ -23,7 +22,7 @@ export default function Header() {
                     </a>
 
                     <a
-                        href="https://github.com/remcostoeten/Kanban-board---NextJS-#"
+                        href="https://github.com/remcostoeten/Kanban-board"
                         target="_blank"
                         className="p-2 lg:px-4 md:mx-2 text-indigo-600 text-center border border-solid border-indigo-600 rounded hover:bg-indigo-600 hover:text-white transition-colors duration-300 mt-1 md:mt-0 md:ml-1"
                     >
