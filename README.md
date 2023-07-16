@@ -1,1 +1,3 @@
-This repository is a collection of code snippets and examples, showcasing various personal scrpts I use for productivity or work. The site is build and maintained via markdown powered by NextJS.
+This is a feature which I initially build as  a project to learn NextJS. Extracted into it's own repo which can be seen on https://kanban.remcostoeten.com. kanban board authenticated with Firebase (google) using TailwindCSS, NextJS, TypeScript and more. 
+
+Repo is somewhat bloated, will clean up later.
