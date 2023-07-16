@@ -1,6 +1,4 @@
-import React from 'react';
-
-export default function header() {
+export default function Header() {
     return (
         <nav className="bg-white py-2 md:py-4">
             <div className="container px-4 mx-auto md:flex md:items-center">

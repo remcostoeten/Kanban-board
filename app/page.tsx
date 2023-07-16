@@ -65,7 +65,7 @@ export default function Index() {
         if (showConfetti) {
             const timer = setTimeout(() => {
                 setShowConfetti(false);
-            }, 5000); // Hide confetti after 5 seconds
+            }, 5000);
             return () => clearTimeout(timer);
         }
     }, [showConfetti]);
@@ -82,8 +82,8 @@ export default function Index() {
                         </>
                     ) : (
                         <>
-                            <div className="not-authorized flex items-center mx-auto max-w-[1280px] ">
-                                <div className="not-authorized__inner text-black p-6">
+                            <div className="not-authorized__inner text-black p-6 flex flex-row gap-y-3.5 items-center content-center h-screen lg:-mt-44">
+                                <div className="not-authorized__inner text-black p-6 lg:flex lg:flex-col lg:gap-y-2.5">
                                     <h2 className="text-black text-xl">
                                         Oops! Not authorized<br></br>for this page.
                                     </h2>
