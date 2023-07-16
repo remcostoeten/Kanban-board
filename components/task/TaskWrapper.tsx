@@ -53,10 +53,6 @@ export default function TaskWrapper() {
         });
     }, []);
 
-    const logout = () => {
-        auth.signOut();
-    };
-
     useEffect(() => {
         if (auth.currentUser) {
             const unsubscribe = onSnapshot(collection(db, `tasks-${auth.currentUser?.uid}`), (snapshot) => {
@@ -115,11 +111,6 @@ export default function TaskWrapper() {
             <div className="bg-gray-100 h-screen flex items-baseline pt-4 justify-center">
                 <div className="todo todo-wrapper w-full max-w-5xl p-6 rounded-xl bg-white shadow-md">
                     <div className="todo__inner">
-                        <div className="absolute right-4 ">
-                            <span className="underline text-sm" onClick={Logout}>
-                                Logout
-                            </span>
-                        </div>
                         <main>
                             <div className="todo__header flex flex-col mb-2">
                                 <h2 className="text-xl font-semibold">
