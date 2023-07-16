@@ -2,23 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-// // Utilities
 @import '../styles/utils/_responsive.scss';
 @import '../styles/utils/_mixins.scss';
-@import '../styles/utils/_variabels.scss';
-@import '../styles/utils/_keyframes.scss';
-@import '../styles/utils/_animatecss.scss';
 
-// // Animations
-@import '../styles/animations/_pageIn.scss';
-@import '../styles/animations/_pageOut.scss';
-@import '../styles/animations/_loading.scss';
-@import '../styles/animations/_404.scss';
-
-// @import '../styles//preloader';
-
-// // //components
-@import '../styles/components/_header.scss';
 @import '../styles/components/_task.scss';
 @import '../styles/_theme.scss';
 
@@ -27,10 +13,6 @@
 }
 
 $formInputWidth: 200px;
-
-.price {
-    max-width: calc($formInputWidth / 4);
-}
 
 input,
 select,
@@ -64,55 +46,6 @@ textarea {
     width: 30px;
 }
 
-.cursor {
-    z-index: 999999999999999;
-}
-
-body {
-    &:has(.cursor) {
-        z-index: -1;
-        * {
-            cursor: none;
-
-            *:hover {
-                cursor: none;
-            }
-        }
-        .hand {
-            width: 50px;
-            position: absolute;
-            top: -20px;
-            left: -30px;
-            z-index: 1;
-            transform: translateY(-360px);
-        }
-    }
-}
-.fade-enter {
-    opacity: 0;
-    transform: translate3d(0, 20px, 0);
-}
-
-.fade-enter-active {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-    transition: opacity 500ms, transform 500ms;
-}
-
-.fade-exit {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-}
-
-.fade-exit-active {
-    opacity: 0;
-    transform: translate3d(0, 20px, 0);
-    transition: opacity 500ms, transform 500ms;
-}
-
-.hero-height {
-    height: 200vh;
-}
 .hasWaves {
     background-color: #0d0d0d;
 

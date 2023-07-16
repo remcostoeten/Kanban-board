@@ -112,12 +112,6 @@ export default function Index() {
                                                 </>
                                             )}
                                         </div>
-                                        <div className="item item--arrow">
-                                            <Link href="/" className="cta cta-two  border-2 border-indigo-600 p-2 text-indigo-600 font-bold flex items-center justify-center">
-                                                Or return home
-                                                <KeyboardBackspace />
-                                            </Link>
-                                        </div>
                                     </div>
                                 </div>
                                 <div className="lost">
