@@ -20,6 +20,9 @@ export default function Header() {
                     <a href="https://remcostoeten.com" target="_blank" className="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">
                         Go to main site
                     </a>
+                    <a href="https://vsc.remcostoeten.com" target="_blank" className="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">
+                        Go to vsc.remcostoeten
+                    </a>
 
                     <a
                         href="https://github.com/remcostoeten/Kanban-board"
