@@ -51,7 +51,7 @@ const TaskModal: React.FC<Props> = ({ isOpen, onClose, onSubmit, editedTask }) =
                             <span className="text-gray-700">Task Title</span>
                             <input
                                 type="text"
-                                className="p-2 mt-1 block w-full rounded-md border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                                className="p-2 mt-1 block  rounded-md border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
                                 value={title}
                                 onChange={(e) => setTitle(e.target.value)}
                             />
@@ -59,7 +59,7 @@ const TaskModal: React.FC<Props> = ({ isOpen, onClose, onSubmit, editedTask }) =
                         <label className="block mt-4">
                             <span className="text-gray-700">Task Description</span>
                             <textarea
-                                className="p-2 mt-1 block w-full h-24 rounded-md border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                                className="p-2 mt-1 block  h-24 rounded-md border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
                                 value={description}
                                 onChange={(e) => setDescription(e.target.value)}
                             ></textarea>
@@ -68,7 +68,7 @@ const TaskModal: React.FC<Props> = ({ isOpen, onClose, onSubmit, editedTask }) =
                             <span className="text-gray-700">Task Category</span>
                             <input
                                 type="text"
-                                className="p-2 mt-1 block w-full rounded-md border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                                className="p-2 mt-1 block  rounded-md border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
                                 value={category}
                                 onChange={(e) => setCategory(e.target.value)}
                             />
